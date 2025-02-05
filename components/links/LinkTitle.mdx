@@ -29,6 +29,8 @@ Currently, only 3 types of the links are included in the design system, which ar
 - Body
 - Navigation
 
+This page showcases the **Title** link, which is used for links inside the body text.
+
 ### Features
 
 The differences between the three types of links are mainly stylistic, such as color, text decoration, and animation. The typography is interchangeable within each type; for example, a Title link can be used with any title typography.
@@ -38,5 +40,5 @@ The differences between the three types of links are mainly stylistic, such as c
 #### Title Link
 
 ```twig
-<a class="link--body c-content-interactive-secondary d-underline t-body-medium">{{ text }}</a>
+<a href={{ url }} class="link--title c-content-primary c-underline-secondary ani-underline">{{ text }}</a>
 ```

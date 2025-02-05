@@ -8,17 +8,15 @@ const cn = (...classes) => {
 const BASE_LINK_CLASSES =
   "link--body c-content-interactive-secondary d-underline t-body-medium";
 
-const LinkBody = forwardRef(
-  ({ children, className, variant = "title", ...props }, ref) => {
-    const linkClasses = cn(BASE_LINK_CLASSES, className);
+const LinkBody = forwardRef(({ text, className, ...props }, ref) => {
+  const linkClasses = cn(BASE_LINK_CLASSES, className);
 
-    return (
-      <a ref={ref} className={linkClasses} {...props}>
-        {children}
-      </a>
-    );
-  }
-);
+  return (
+    <a ref={ref} className={linkClasses} {...props}>
+      {text}
+    </a>
+  );
+});
 
 LinkBody.displayName = "Link - Body";
 
