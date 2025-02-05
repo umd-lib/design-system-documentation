@@ -550,3 +550,15 @@ body {
     padding-right: 7.5rem;
   }
 }
+
+/* defatult element */
+/* a {
+  color: var(--dark-gray);
+  text-decoration: underline;
+  transition: all 0.5s;
+}
+
+a:hover,
+a:focus {
+  color: var(--maryland-red);
+} */
