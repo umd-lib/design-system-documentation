@@ -8,12 +8,12 @@ const cn = (...classes) => {
 const BASE_LINK_CLASSES =
   "link--navigation c-content-interactive-secondary t-interactive";
 
-const LinkNavigation = forwardRef(({ text, className, ...props }, ref) => {
+const LinkNavigation = forwardRef(({ children, className, ...props }, ref) => {
   const linkClasses = cn(BASE_LINK_CLASSES, className);
 
   return (
     <a ref={ref} className={linkClasses} {...props}>
-      {text}
+      {children}
     </a>
   );
 });

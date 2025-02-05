@@ -8,12 +8,12 @@ const cn = (...classes) => {
 const BASE_LINK_CLASSES =
   "link--title c-content-primary c-underline-secondary ani-underline t-title-medium";
 
-const LinkTitle = forwardRef(({ text, className, ...props }, ref) => {
+const LinkTitle = forwardRef(({ children, className, ...props }, ref) => {
   const linkClasses = cn(BASE_LINK_CLASSES, className);
 
   return (
     <a ref={ref} className={linkClasses} {...props}>
-      {text}
+      {children}
     </a>
   );
 });

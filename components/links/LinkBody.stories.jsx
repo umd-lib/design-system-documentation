@@ -11,6 +11,6 @@ export default {
 // Title Stories
 export const Body = {
   args: {
-    text: "This is a body link.",
+    children: "This is a body link.",
   },
 };

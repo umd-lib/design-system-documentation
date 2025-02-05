@@ -11,6 +11,6 @@ export default {
 // Title Stories
 export const Navigation = {
   args: {
-    text: "Find a Space",
+    children: "Find a Space",
   },
 };

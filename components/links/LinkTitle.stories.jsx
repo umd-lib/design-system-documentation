@@ -11,6 +11,6 @@ export default {
 // Title Stories
 export const Title = {
   args: {
-    text: "Digital Collections",
+    children: "Digital Collections",
   },
 };
